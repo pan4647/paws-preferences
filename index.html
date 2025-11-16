@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Paws & Preferences — Find Your Favourite Kitty</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Swipe cats to like or dislike — mobile-first single page app that uses Cataas for images." />
+  
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">🐾</div>
+      <div>
+        <h1>Paws & Preferences</h1>
+        <p class="lead">Swipe right to like, left to dislike — powered by Cataas.</p>
+      </div>
+    </header>
+
+    <div class="stage">
+      <div class="cards" id="cards"></div>
+
+      <!-- Summary overlay (hidden until finished) -->
+      <div id="summary" class="summary" style="display:none">
+        <div style="font-size:40px">😺</div>
+        <h2 id="summary-title">You liked 0 cats</h2>
+        <p id="summary-sub" style="color:var(--muted)"></p>
+        <div class="liked-grid" id="liked-grid"></div>
+        <div style="margin-top:18px">
+          <button id="restart" class="btn big">Restart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="dislikeBtn" class="btn">👎 Dislike</button>
+      <button id="likeBtn" class="btn">👍 Like</button>
+    </div>
+
+    <footer style="text-align:center;padding:6px 0;color:var(--muted);font-size:12px">Tip: drag the image and release. Works with touch & mouse.</footer>
+  </div>
+
+  
+</body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
+
+
+
